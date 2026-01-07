@@ -5,10 +5,6 @@ I care about leverage, clean abstractions, and building technology that actually
 
 I spend most of my time designing AI-powered data systems: LLM + SQL layers, agent workflows, internal tools, and automation that turn messy business data into usable intelligence.
 
-This channel is where I share what I’m building, what breaks, and what actually holds up in production.
-
----
-
 ## Work
 
 I run **General Development (general.dev)** — an AI enablement studio for serious operators.
@@ -23,8 +19,6 @@ A lot of this work lives at the intersection of AI, data engineering, and produc
 
 I also run **Cardinal eCommerce**, where we apply the same systems thinking to complex Shopify + subscription infrastructure — but AI is now the center of gravity.
 
----
-
 ## What I’m Interested In
 
 - Applied LLM systems (not hype)
@@ -34,8 +28,6 @@ I also run **Cardinal eCommerce**, where we apply the same systems thinking to c
 - Building small, sharp teams
 - Long-term leverage over short-term hacks
 
----
-
 ## Outside the Keyboard
 
 - Brazilian Jiu-Jitsu & wrestling 🥋  
@@ -43,8 +35,6 @@ I also run **Cardinal eCommerce**, where we apply the same systems thinking to c
 - Cooking 👨‍🍳  
 - Living between Denver, Portland, and CDMX 🇲🇽  
 - Reading, thinking, and pressure-testing ideas 📘  
-
----
 
 ## Say Hi
 
