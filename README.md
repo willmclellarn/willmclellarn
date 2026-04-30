@@ -1,43 +1,38 @@
 # Helloooooo Github 👋
 
-I’m Will — an AI engineer, systems builder, and founder.  
-I care about leverage, clean abstractions, and building technology that actually works in the real world.
+I'm Will. AI engineer, founder, builder.
 
-I spend most of my time designing AI-powered data systems: LLM + SQL layers, agent workflows, internal tools, and automation that turn messy business data into usable intelligence.
+I make tools to help humans be **healthier, happier, and more capable**.
 
-## Work
+Behavior first. AI second. Humans dictate what we do. Technology helps us do it. Never the other way around.
 
-I run **General Development (general.dev)** — an AI enablement studio for serious operators.
+## What I'm Building
 
-We build:
-- AI data wrappers (LLM ↔ SQL ↔ business logic)
-- Internal AI tools & dashboards
-- Agent-based workflows (classification, analysis, decision support)
-- Production-grade AI systems (not demos)
+- **Linear BJJ** — AI BJJ coach. Text + voice. Log sessions, track your game, get feedback. Tools that meet you on the mat. 🥋
+- **Mingler** — The old institutions of community are decaying. AI that builds new ones — turning audiences into friendships.
+- **[Organic Memory](https://github.com/willmclellarn/organic-memory)** — Open protocol for personal AI memory. Your patterns, owned by you, queryable by any AI you authorize.
 
-A lot of this work lives at the intersection of AI, data engineering, and product thinking.
+All under **[General Dev](https://general.dev)** — the studio behind the work.
 
-I also run **Cardinal eCommerce**, where we apply the same systems thinking to complex Shopify + subscription infrastructure — but AI is now the center of gravity.
+Also still running **Cardinal eCom**, where the same systems thinking goes into Shopify + subscription infrastructure for serious operators.
 
-## What I’m Interested In
+## The Thesis
 
-- Applied LLM systems (not hype)
-- Agent architectures & orchestration
-- Data modeling for AI
-- Automation that compounds
-- Building small, sharp teams
-- Long-term leverage over short-term hacks
+- **Behavior first.** Tech that decides for you, captures your attention, or replaces your judgment is pointed the wrong way.
+- **Amplify, don't replace.** AI that makes people extraordinary — not AI that makes people obsolete.
+- **Live well.** Health, happiness, capability. Train hard, ship hard, sleep well.
 
-## Outside the Keyboard
+## Outside The Keyboard
 
-- Brazilian Jiu-Jitsu & wrestling 🥋  
-- Strength & conditioning  
-- Cooking 👨‍🍳  
-- Living between Denver, Portland, and CDMX 🇲🇽  
-- Reading, thinking, and pressure-testing ideas 📘  
+- BJJ & wrestling 🥋 — the truest mirror I've found
+- Strength training & breathwork
+- Cooking 👨‍🍳
+- Living between Denver, Portland, and CDMX 🇲🇽
+- Reading, thinking, pressure-testing ideas 📘
 
 ## Say Hi
 
-- Blog: https://www.mclellarn.com  
-- Twitter/X: https://twitter.com/willmclellarn  
-- Email: will@cardinalecom.com  
+- Site: https://www.mclellarn.com
+- Substack: https://willmclellarn.substack.com
+- X: https://twitter.com/willmclellarn
+- Email: w@general.dev
