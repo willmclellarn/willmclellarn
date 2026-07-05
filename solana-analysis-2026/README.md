@@ -164,6 +164,36 @@ CoinGecko/CoinMarketCap run **$2–4B/day**. Reproduce with `analysis.py` + `dat
 5. **Mark the calendar**: Alpenglow testnet/mainnet announcements are the schedulable vol events
    of H2. BoJ meetings and BTC ETF flow prints remain the unscheduled ones.
 
+## 7. Backtest: z-score mean reversion (added after §6)
+
+`backtest.py` tests the §6 framework against this dataset (Oct 20, 2025 – Jul 5, 2026,
+daily closes, 15bps/side costs). Headline results:
+
+| Variant | Total | Max DD | Trades | Win% |
+|---|---|---|---|---|
+| Buy & hold | −56.7% | −69.2% | — | — |
+| V1 raw z-score, long/short | −29.1% | −35.2% | 22 | 41% |
+| V2 + confirmation-day entry | −25.5% | −48.3% | 16 | 50% |
+| V4 + SMA50-slope regime gate | **−15.8%** | −36.7% | 13 | 54% |
+
+The decisive finding is the **regime split** of the identical V2 rules:
+
+- Oct 20 – Feb 23 (trending decline): 8 trades, **12% win rate, −57.7% cumulative**
+- Feb 24 – Jul 5 (range regime): 8 trades, **88% win rate, +34.7% cumulative**
+
+![Backtest](charts/06_backtest.png)
+
+Conclusions: (1) every variant beats buy-and-hold, but none is profitable across the full
+period — the strategy is only tradeable *with* a working regime filter; (2) the simple
+ex-ante slope gate recovers part of that (V4), and the residual losers (Jan 22, Feb 3,
+May 29) were all macro-shock knives that price-based gates catch too late — which is the
+specific job of the AI news/macro veto described in [EXECUTION.md](EXECUTION.md);
+(3) sensitivity: stricter entries (z=2.0) lose less in the downtrend; results degrade
+roughly linearly with costs (see the sensitivity grid in `backtest.py` output).
+**Caveats**: 9 months of daily closes, 13–22 trades — a regime-fit sanity check, not a
+validated edge; intraday fills/stops are approximated at next close; the funding-rate
+gate could not be backtested (no free historical funding source) and is live-only logic.
+
 ## Sources
 
 - Price/volume: [Coin Metrics community data](https://github.com/coinmetrics/data), [fawazahmed0/exchange-api](https://github.com/fawazahmed0/exchange-api)
