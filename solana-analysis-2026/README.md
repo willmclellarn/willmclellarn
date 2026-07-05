@@ -194,6 +194,27 @@ roughly linearly with costs (see the sensitivity grid in `backtest.py` output).
 validated edge; intraday fills/stops are approximated at next close; the funding-rate
 gate could not be backtested (no free historical funding source) and is live-only logic.
 
+### Kraken Pro variant
+
+`backtest_kraken.py` runs the same variants on **Kraken's own SOL/USD candles** (public
+API via ccxt, no keys — run it locally) priced at the
+[Kraken Pro fee schedule](https://www.kraken.com/features/fee-schedule). Fees matter
+enormously at this trade frequency — V4 total return by fee configuration (per side,
+incl. 10bps slippage on taker):
+
+| Tier | Taker | Maker (limit entries) |
+|---|---|---|
+| base (< $10k/30d) | 50bps/side → **−23.2%** | 25bps → −18.0% |
+| $10k+ | 45bps → −22.2% | 20bps → −16.9% |
+| $250k+ | 30bps → −19.1% | 10bps → −14.7% |
+
+A base-tier taker round trip costs 1.0% against an average range-regime winner of ~+4.6%
+gross — roughly a quarter of the edge. On Kraken, enter with **post-only limit orders**
+(maker) and let volume or Assets-on-Platform qualify you for a better tier
+([July 2026 tier changes](https://support.kraken.com/articles/cross-platform-fee-tier-changes)).
+The script also supports `--timeframe 4h` for an intraday check (Kraken's public OHLC
+returns max 720 candles, so 4h covers ~4 months).
+
 ## Sources
 
 - Price/volume: [Coin Metrics community data](https://github.com/coinmetrics/data), [fawazahmed0/exchange-api](https://github.com/fawazahmed0/exchange-api)
